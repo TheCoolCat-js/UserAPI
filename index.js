@@ -28,6 +28,7 @@ app.post("/users", (req, res) => {
   res.status(201).json(newUser);
 });
 
+// DELETE FUNCTIONALITY
 app.delete("/users/:id", (req, res) => {
   const id = parseInt(req.params.id);
 
